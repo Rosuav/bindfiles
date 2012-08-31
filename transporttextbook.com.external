@@ -1,0 +1,2 @@
+$include "/etc/bind/transporttextbook.com"
+@	IN	A	$iinet$

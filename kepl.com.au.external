@@ -1,0 +1,2 @@
+$include "/etc/bind/kepl.com.au"
+gideon	IN	A	$iinet$

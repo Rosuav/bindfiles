@@ -1,0 +1,2 @@
+$include "/etc/bind/rosuav.com"
+gideon	IN	A	$iinet$
