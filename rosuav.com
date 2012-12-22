@@ -14,6 +14,7 @@ $TTL 3600
 
 @	IN	A	$iinet$
 www	IN	CNAME	@
+lists	IN	CNAME	@
 o	IN	A	$optus$
 local	IN	A	192.168.0.13
 uk	IN	A	127.0.0.1
@@ -22,6 +23,8 @@ garden	IN	A	127.0.0.1
 *.garden IN	A	127.0.0.1
 gideon.garden IN A	192.168.0.13
 chris	IN	CNAME	gideon.is-a-geek.net.
+text	IN	TXT	"Text 1A" "Text 1B"
+text	IN	TXT	"Text 2A" "Text 2B"
 
 ; deprecated vv
 dnd	IN	CNAME	@
