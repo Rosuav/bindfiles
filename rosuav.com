@@ -22,6 +22,8 @@ uk	IN	A	127.0.0.1
 garden	IN	A	127.0.0.1
 *.garden IN	A	127.0.0.1
 gideon.garden IN A	192.168.0.13
+yosemite.garden IN A	192.168.0.14
+huix.garden IN	A	192.168.0.16
 chris	IN	CNAME	gideon.is-a-geek.net.
 text	IN	TXT	"Text 1A" "Text 1B"
 text	IN	TXT	"Text 2A" "Text 2B"
