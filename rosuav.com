@@ -38,6 +38,7 @@ i	IN	A	$iinet$
 
 @	IN	SPF	"v=spf1 -all"
 @	IN	TXT	"v=spf1 -all"
+@	IN	TXT	"keybase-site-verification=KYKAVWX4a_qGHpZX-k8lPq4xpQQ27astPsP3F8IMJI0"
 
 ; $include "/etc/bind/Krosuav.com.+005+28701.key"
 ; $include "/etc/bind/Krosuav.com.+005+49534.key"
