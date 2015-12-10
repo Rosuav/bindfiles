@@ -14,6 +14,7 @@ $TTL 7200
 
 @	IN	A	$iinet$
 www	IN	CNAME	@
+shop	IN	CNAME	@
 local	IN	A	192.168.0.13
 @	IN	SPF	$spf$
 @	IN	TXT	$spf$
