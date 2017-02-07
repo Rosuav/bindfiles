@@ -15,3 +15,4 @@ $TTL 3600
 @	IN	A	$iinet$
 @	IN	SPF	"v=spf1 ?all"
 @	IN	TXT	"v=spf1 ?all"
+www	IN	A	$iinet$

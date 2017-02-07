@@ -1,2 +1,0 @@
-$include "/etc/bind/smartpassengers.org.au"
-www	IN	A	$iinet$

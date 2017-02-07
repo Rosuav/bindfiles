@@ -28,6 +28,8 @@ sikorsky.garden IN A	192.168.2.2
 chris	IN	CNAME	gideon.is-a-geek.net.
 text	IN	TXT	"Text 1A" "Text 1B"
 text	IN	TXT	"Text 2A" "Text 2B"
+gideon	IN	A	$iinet$
+sikorsky IN	A	$optus$
 
 ; deprecated vv
 dnd	IN	CNAME	@

@@ -15,3 +15,4 @@ $TTL 60
 www	IN	CNAME	@
 @	IN	SPF	"v=spf1 ?all"
 @	IN	TXT	"v=spf1 ?all"
+@	IN	A	$iinet$

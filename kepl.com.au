@@ -18,3 +18,4 @@ ns2	IN	A	$iinet$
 mail	IN	CNAME	ns2
 @	IN	SPF	$spf$
 @	IN	TXT	$spf$
+gideon	IN	A	$iinet$
