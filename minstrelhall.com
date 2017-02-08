@@ -1,6 +1,6 @@
 $TTL 3600
 @	IN	SOA	gideon.rosuav.com. domainmaster.rosuav.com. (
-			$serial$	; Serial
+			2017020801	; Serial
 			7200		; Refresh
 			3600		; Retry
 			2419200		; Expire
