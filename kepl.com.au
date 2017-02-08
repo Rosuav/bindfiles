@@ -12,10 +12,10 @@ $TTL 3600
 	IN	MX	10 gideon.rosuav.com.
 
 www	IN	CNAME	gideon
-@	IN	A	$iinet$
-ns1	IN	A	$optus$
-ns2	IN	A	$iinet$
+@	IN	A	203.214.67.43
+ns1	IN	A	122.107.147.136
+ns2	IN	A	203.214.67.43
 mail	IN	CNAME	ns2
 @	IN	SPF	$spf$
 @	IN	TXT	$spf$
-gideon	IN	A	$iinet$
+gideon	IN	A	203.214.67.43

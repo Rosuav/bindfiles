@@ -12,9 +12,9 @@ $TTL 3600
 
 	IN	MX	10 gideon.rosuav.com.
 
-@	IN	A	$iinet$
+@	IN	A	203.214.67.43
 www	IN	CNAME	@
-mail	IN	A	$iinet$
-alt	IN	A	$optus$
+mail	IN	A	203.214.67.43
+alt	IN	A	122.107.147.136
 @	IN	SPF	"v=spf1 -all"
 @	IN	TXT	"v=spf1 -all"

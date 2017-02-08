@@ -12,7 +12,7 @@ $TTL 7200
 
 	IN	MX	10 gideon.rosuav.com.
 
-@	IN	A	$iinet$
+@	IN	A	203.214.67.43
 www	IN	CNAME	gasvic.github.io.
 @	IN	SPF	$spf$
 @	IN	TXT	$spf$

@@ -12,10 +12,10 @@ $TTL 3600
 
 	IN	MX	10 gideon
 
-@	IN	A	$iinet$
+@	IN	A	203.214.67.43
 www	IN	CNAME	@
 lists	IN	CNAME	@
-o	IN	A	$optus$
+o	IN	A	122.107.147.136
 local	IN	A	192.168.0.13
 uk	IN	A	127.0.0.1
 *.uk	IN	A	127.0.0.1
@@ -28,14 +28,14 @@ sikorsky.garden IN A	192.168.2.2
 chris	IN	CNAME	gideon.is-a-geek.net.
 text	IN	TXT	"Text 1A" "Text 1B"
 text	IN	TXT	"Text 2A" "Text 2B"
-gideon	IN	A	$iinet$
-sikorsky IN	A	$optus$
+gideon	IN	A	203.214.67.43
+sikorsky IN	A	122.107.147.136
 
 ; deprecated vv
 dnd	IN	CNAME	@
-ns1	IN	A	$optus$
-ns2	IN	A	$iinet$
-i	IN	A	$iinet$
+ns1	IN	A	122.107.147.136
+ns2	IN	A	203.214.67.43
+i	IN	A	203.214.67.43
 ; deprecated ^^
 
 @	IN	SPF	"v=spf1 -all"

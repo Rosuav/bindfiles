@@ -12,7 +12,7 @@ $TTL 7200
 
 	IN	MX	10 gideon.rosuav.com.
 
-@	IN	A	$iinet$
+@	IN	A	203.214.67.43
 www	IN	CNAME	@
 shop	IN	CNAME	@
 local	IN	A	192.168.0.13
