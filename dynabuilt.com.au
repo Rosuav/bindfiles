@@ -14,5 +14,5 @@ $TTL 7200
 
 @	IN	A	203.214.67.43
 www	IN	CNAME	@
-@	IN	SPF	$spf$
-@	IN	TXT	$spf$
+@	IN	SPF	"v=spf1 ip4:122.107.147.136 ip4:203.214.67.43 ip4:192.168.0.0/16 -all"
+@	IN	TXT	"v=spf1 ip4:122.107.147.136 ip4:203.214.67.43 ip4:192.168.0.0/16 -all"
