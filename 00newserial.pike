@@ -52,4 +52,20 @@ int main(int argc, array(string) argv)
 	new[serial_line] = sprintf("%s%d%s; %s", indent, newserial, gap, tag);
 	Process.create_process(({"git", "config", configtag, (string)newserial}))->wait();
 	write(new * "\n");
+	//For convenience, rebuild the zones file from the known file list.
+	string files = Process.run(({"git", "ls-files", "-z"}))->stdout;
+	string attrs = Process.run(({"git", "check-attr", "filter", "--stdin", "-z"}),
+		(["stdin": files]))->stdout;
+	string zones = "";
+	while (sscanf(attrs, "%s\0%s\0%s\0%s", string fn, string attr, string val, attrs) == 4)
+	{
+		if (val != "dnsserial") continue; //Ignore the files that aren't to be checked this way
+		zones += sprintf(#"zone %q IN {
+	type master;
+	file %q;
+};
+
+", fn, combine_path(argv[0], "..", fn));
+	}
+	Stdio.write_file("zones", zones);
 }
