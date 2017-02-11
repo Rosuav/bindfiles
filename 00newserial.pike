@@ -46,7 +46,7 @@ int main(int argc, array(string) argv)
 		(1900 + tm->year) * 1000000 +
 		(1 + tm->mon) * 10000 +
 		tm->mday * 100 + 1;
-	if (newserial < lastserial) newserial = lastserial + 1;
+	if (newserial <= lastserial) newserial = lastserial + 1;
 	//werror("New serial: %d\n", newserial);
 	//Reconstruct the line from the original parts, but with a new serial.
 	new[serial_line] = sprintf("%s%d%s; %s", indent, newserial, gap, tag);
