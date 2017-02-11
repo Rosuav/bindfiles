@@ -7,9 +7,8 @@ array(int) find_serial(array(string) lines)
 {
 	foreach (lines; int i; string line)
 	{
-		if (sscanf(line, "%[ \t]%[0-9]%[ \t]; %s",
-			string indent, string value, string gap, string tag
-		) && tag == "Serial")
+		if (sscanf(line, "%*[ \t]%[0-9]%*[ \t]; %s", string value, string tag)
+			&& tag == "Serial")
 		{
 			return ({i, (int)value});
 		}
