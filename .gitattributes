@@ -1,3 +1,3 @@
 * filter=dnsserial
-*.pike -filter
-.* -filter
+*.pike !filter
+.* !filter
