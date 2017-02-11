@@ -27,7 +27,9 @@ int main(int argc, array(string) argv)
 		return 0;
 	}
 	werror("Processing %s\n", argv[1]);
-	string cur = Stdio.read_file(argv[1]) || ""; //The file might not exist; if so, it won't have a serial.
+	//The file might not exist; if so, it won't have a serial.
+	array(string) cur = (Stdio.read_file(argv[1]) || "") / "\n";
+	//The new contents will always exist, and should always have a serial.
 	array(string) new = Stdio.stdin.read() / "\n";
 	[int line, int serial] = find_serial(new);
 	werror("Serial in checkout: %d\n", serial);
