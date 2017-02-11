@@ -1,0 +1,10 @@
+Bind files for Rosuav's domains
+
+To use these, clone the repository onto the server somewhere. The directory
+needs to be readable by the bind user, but should be writable only by root;
+the easiest way is to clone it as root into /etc/bind/bindfiles.
+
+Install the hook by invoking it, then freshly check out all files, to prime
+the serial numbers. This will also create the (untracked) zones file, which
+lists all zone files. Add an include directive to /etc/bind/named.conf.local
+telling bind to read 'zones'; everything else should be handled automatically.
