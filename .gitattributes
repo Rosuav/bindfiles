@@ -1,2 +1,2 @@
 * filter=dnsserial
-newserial.pike -filter
+*.pike -filter
