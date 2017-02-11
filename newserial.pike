@@ -13,10 +13,10 @@ int main(int argc, array(string) argv)
 	if (clean) argv = argv[1..];
 	werror("Processing %s\n", argv[1]);
 	array(string) new = Stdio.stdin.read() / "\n";
-	string indent, serial, gap, tag; int serial_line;
+	string indent, gap, tag; int serial_line;
 	foreach (new; serial_line; string line)
 	{
-		if (sscanf(line, "%[ \t]%[0-9]%[ \t]; %s", indent, serial, gap, tag)
+		if (sscanf(line, "%[ \t]%*[0-9]%[ \t]; %s", indent, gap, tag)
 			&& tag == "Serial")
 			break;
 	}
@@ -31,7 +31,6 @@ int main(int argc, array(string) argv)
 		write(new * "\n");
 		exit(0, "Zeroed out serial for checkin\n");
 	}
-	werror("Serial in checkout: %s\n", serial);
 	mapping tm = gmtime(time());
 	string configtag = "rosuav.newserial." + argv[1];
 	int lastserial = (int)Process.run(({"git", "config", configtag}))->stdout;
