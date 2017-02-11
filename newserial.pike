@@ -25,11 +25,6 @@ int main(int argc, array(string) argv)
 	}
 	werror("Serial in checkout: %s\n", serial);
 	mapping tm = gmtime(time());
-	int wantserial =
-		(1900 + tm->year) * 1000000 +
-		(1 + tm->mon) * 10000 +
-		tm->mday * 100 + 1;
-	werror("Want serial: %d\n", wantserial);
 	string configtag = "rosuav.newserial." + argv[1];
 	int lastserial = (int)Process.run(({"git", "config", configtag}))->stdout;
 	werror("Last serial: %d\n", lastserial);
@@ -37,9 +32,14 @@ int main(int argc, array(string) argv)
 	//to the next available. (If that pushes us past 99, that's fine; we
 	//just start using up tomorrow's numbers. Not that that's all that
 	//likely anyway.)
-	if (lastserial >= wantserial) wantserial = lastserial + 1;
+	int newserial =
+		(1900 + tm->year) * 1000000 +
+		(1 + tm->mon) * 10000 +
+		tm->mday * 100 + 1;
+	if (newserial < lastserial) newserial = lastserial + 1;
+	werror("New serial: %d\n", newserial);
 	//Reconstruct the line from the original parts, but with a new serial.
-	new[serial_line] = sprintf("%s%d%s; %s", indent, wantserial, gap, tag);
-	Process.create_process(({"git", "config", configtag, (string)wantserial}))->wait();
+	new[serial_line] = sprintf("%s%d%s; %s", indent, newserial, gap, tag);
+	Process.create_process(({"git", "config", configtag, (string)newserial}))->wait();
 	write(new * "\n");
 }
