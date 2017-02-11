@@ -8,3 +8,5 @@ Install the hook by invoking it, then freshly check out all files, to prime
 the serial numbers. This will also create the (untracked) zones file, which
 lists all zone files. Add an include directive to /etc/bind/named.conf.local
 telling bind to read 'zones'; everything else should be handled automatically.
+
+After any change, pull the latest changes, then reload bind9. Done!
