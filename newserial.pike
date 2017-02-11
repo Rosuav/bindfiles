@@ -4,11 +4,13 @@ int main(int argc, array(string) argv)
 {
 	if (argc == 1)
 	{
-		Process.create_process(({"git", "config", "filter.dnsserial.clean", "cat"}))->wait();
+		Process.create_process(({"git", "config", "filter.dnsserial.clean", argv[0] + " --clean %f"}))->wait();
 		Process.create_process(({"git", "config", "filter.dnsserial.smudge", argv[0] + " %f"}))->wait();
 		write("Installed.\n");
 		return 0;
 	}
+	int clean = (argv[1] == "--clean");
+	if (clean) argv = argv[1..];
 	werror("Processing %s\n", argv[1]);
 	array(string) new = Stdio.stdin.read() / "\n";
 	string indent, serial, gap, tag; int serial_line;
@@ -22,6 +24,12 @@ int main(int argc, array(string) argv)
 	{
 		write(new * "\n");
 		exit(0, "No serial found in file\n");
+	}
+	if (clean)
+	{
+		new[serial_line] = sprintf("%s0000000000%s; %s", indent, gap, tag);
+		write(new * "\n");
+		exit(0, "Zeroed out serial for checkin\n");
 	}
 	werror("Serial in checkout: %s\n", serial);
 	mapping tm = gmtime(time());
