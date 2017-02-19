@@ -12,9 +12,11 @@ $TTL 3600
 
 	IN	MX	10 gideon.rosuav.com.
 
-@	IN	A	203.214.67.43
+@	IN	A	37.61.205.138
+@	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 www	IN	CNAME	@
-mail	IN	A	203.214.67.43
+mail	IN	A	37.61.205.138
+mail	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 alt	IN	A	122.107.147.136
 @	IN	SPF	"v=spf1 -all"
 @	IN	TXT	"v=spf1 -all"

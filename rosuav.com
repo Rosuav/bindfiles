@@ -12,7 +12,8 @@ $TTL 3600
 
 	IN	MX	10 gideon
 
-@	IN	A	203.214.67.43
+@	IN	A	37.61.205.138
+@	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 www	IN	CNAME	@
 lists	IN	CNAME	@
 o	IN	A	122.107.147.136
@@ -25,19 +26,20 @@ gideon.garden IN A	192.168.0.13
 yosemite.garden IN A	192.168.0.14
 huix.garden IN	A	192.168.0.16
 sikorsky.garden IN A	192.168.2.2
-chris	IN	CNAME	gideon.is-a-geek.net.
 text	IN	TXT	"Text 1A" "Text 1B"
 text	IN	TXT	"Text 2A" "Text 2B"
-gideon	IN	A	203.214.67.43
+gideon	IN	A	37.61.205.138
+gideon	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 sikorsky IN	A	122.107.147.136
 kytheon	IN	A	37.61.205.138
 kytheon	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
+crawle	IN	A	203.214.67.43
 
 ; deprecated vv
 dnd	IN	CNAME	@
 ns1	IN	A	122.107.147.136
-ns2	IN	A	203.214.67.43
-i	IN	A	203.214.67.43
+ns2	IN	CNAME	@
+i	IN	CNAME	@
 ; deprecated ^^
 
 @	IN	SPF	"v=spf1 -all"
