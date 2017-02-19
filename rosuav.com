@@ -39,6 +39,7 @@ crawle	IN	A	203.214.67.43
 dnd	IN	CNAME	@
 ns1	IN	A	122.107.147.136
 ns2	IN	CNAME	@
+; only gilbertandsullivan.org.au uses i.rosuav.com - change me please
 i	IN	CNAME	@
 ; deprecated ^^
 

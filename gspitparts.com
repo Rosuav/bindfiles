@@ -1,5 +1,5 @@
 $TTL 7200
-@	IN	SOA	i.rosuav.com. domains.rosuav.com. (
+@	IN	SOA	gideon.rosuav.com. domains.rosuav.com. (
 			0000000000	; Serial
 			7200		; Refresh
 			3600		; Retry
