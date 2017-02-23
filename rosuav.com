@@ -30,6 +30,8 @@ text	IN	TXT	"Text 1A" "Text 1B"
 text	IN	TXT	"Text 2A" "Text 2B"
 gideon	IN	A	37.61.205.138
 gideon	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
+ipv4	IN	A	37.61.205.138
+ipv6	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 sikorsky IN	A	122.107.147.136
 kytheon	IN	A	37.61.205.138
 kytheon	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
