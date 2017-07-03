@@ -36,6 +36,7 @@ sikorsky IN	A	203.173.41.55
 kytheon	IN	A	37.61.205.138
 kytheon	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 crawle	IN	A	203.214.67.43
+vol	IN	CNAME	rosuav.github.io.
 
 ; deprecated vv
 dnd	IN	CNAME	@
