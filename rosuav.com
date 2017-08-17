@@ -41,9 +41,9 @@ vol	IN	CNAME	rosuav.github.io.
 ; deprecated vv
 dnd	IN	CNAME	@
 ns1	IN	A	203.173.41.55
-ns2	IN	CNAME	@
-; only gilbertandsullivan.org.au uses i.rosuav.com - change me please
-i	IN	CNAME	@
+ns2	IN	A	37.61.205.138
+; nothing now uses i.rosuav.com, and it's kept for a transitional period only
+i	IN	A	37.61.205.138
 ; deprecated ^^
 
 @	IN	SPF	"v=spf1 -all"
