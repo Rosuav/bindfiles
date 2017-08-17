@@ -16,7 +16,7 @@ $TTL 3600
 @	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 www	IN	CNAME	@
 lists	IN	CNAME	@
-o	IN	A	203.173.41.55
+o	IN	A	203.206.226.83
 local	IN	A	192.168.0.13
 uk	IN	A	127.0.0.1
 *.uk	IN	A	127.0.0.1
@@ -32,7 +32,7 @@ gideon	IN	A	37.61.205.138
 gideon	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 ipv4	IN	A	37.61.205.138
 ipv6	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
-sikorsky IN	A	203.173.41.55
+sikorsky IN	A	203.206.226.83
 kytheon	IN	A	37.61.205.138
 kytheon	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 crawle	IN	A	203.214.67.43
@@ -40,7 +40,7 @@ vol	IN	CNAME	rosuav.github.io.
 
 ; deprecated vv
 dnd	IN	CNAME	@
-ns1	IN	A	203.173.41.55
+ns1	IN	A	203.206.226.83
 ns2	IN	A	37.61.205.138
 ; nothing now uses i.rosuav.com, and it's kept for a transitional period only
 i	IN	A	37.61.205.138

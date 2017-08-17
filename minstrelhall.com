@@ -17,6 +17,6 @@ $TTL 3600
 www	IN	CNAME	@
 mail	IN	A	37.61.205.138
 mail	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
-alt	IN	A	203.173.41.55
+alt	IN	A	203.206.226.83
 @	IN	SPF	"v=spf1 -all"
 @	IN	TXT	"v=spf1 -all"
