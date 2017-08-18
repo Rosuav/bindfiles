@@ -38,6 +38,7 @@ kytheon	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 crawle	IN	A	203.214.67.43
 vol	IN	CNAME	rosuav.github.io.
 dyna 60	IN	TXT	"Hello, world"
+dyn 30	IN	CNAME	dyna
 
 ; deprecated vv
 dnd	IN	CNAME	@
