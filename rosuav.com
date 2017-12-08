@@ -39,6 +39,7 @@ crawle	IN	A	203.214.67.43
 vol	IN	CNAME	rosuav.github.io.
 dyna 60	IN	TXT	"Hello, world"
 dyn 30	IN	CNAME	dyna
+ttop	IN	A	203.206.205.179
 
 ; deprecated vv
 dnd	IN	CNAME	@
