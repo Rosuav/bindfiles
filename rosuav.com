@@ -33,7 +33,6 @@ gideon	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 ipv4	IN	A	37.61.205.138
 ipv6	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 sikorsky IN	A	203.206.226.83
-f-35lightningii IN	A	203.206.226.83
 kytheon	IN	A	37.61.205.138
 kytheon	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 crawle	IN	A	203.214.67.43
