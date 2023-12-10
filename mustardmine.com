@@ -12,7 +12,8 @@ $TTL 7200
 
 	IN	MX	10 gideon.rosuav.com.
 
-; Eventually this should be multihomed same as stillebot.com is
+; Eventually this should be multihomed same as stillebot.com is.
+; Until then, though, it just points back to Sikorsky. Good enough.
 @	IN	A	203.206.226.83
 www	IN	CNAME	@
 @	IN	SPF	"v=spf1 -all"
