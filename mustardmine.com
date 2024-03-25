@@ -14,7 +14,7 @@ $TTL 7200
 
 @	IN	A	203.206.226.83
 @	IN	A	37.61.205.138
-; As with stillebot.com, no IPv6 due to Sikorsky not supporting it.
+; As with stillebot.com, no IPv6 due to Sikorsky not supporting it (yet!).
 www	IN	CNAME	@
 @	IN	SPF	"v=spf1 -all"
 @	IN	TXT	"v=spf1 -all"

@@ -13,10 +13,9 @@ $TTL 7200
 	IN	MX	10 gideon.rosuav.com.
 
 @	IN	A	203.206.226.83
-; Temporarily locked to just Sikorsky until I get everything multihomed.
-; @	IN	A	37.61.205.138
+@	IN	A	37.61.205.138
 ; Since I don't have IPv6 to Sikorsky, it's probably better to have no IPv6 than
-; to force everyone onto Gideon.
+; to force everyone onto Gideon. Sikorsky IPv6 is Coming Soon(tm)!
 ; @	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 www	IN	CNAME	@
 @	IN	SPF	"v=spf1 -all"
