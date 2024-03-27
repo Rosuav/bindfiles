@@ -14,7 +14,15 @@ $TTL 7200
 
 @	IN	A	203.206.226.83
 @	IN	A	37.61.205.138
+sikorsky IN	A	203.206.226.83
+gideon	IN	A	37.61.205.138
+sikorsky4 IN	A	203.206.226.83
+gideon4	IN	A	37.61.205.138
+; sikorsky6 IN	AAAA	...
+gideon6	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 ; As with stillebot.com, no IPv6 due to Sikorsky not supporting it (yet!).
+; When one comes, add it to @ as well as to sikorsky and gideon, and of
+; course activate it as sikorsky6
 www	IN	CNAME	@
 @	IN	SPF	"v=spf1 -all"
 @	IN	TXT	"v=spf1 -all"
