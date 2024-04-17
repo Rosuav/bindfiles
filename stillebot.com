@@ -1,4 +1,4 @@
-$TTL 7200
+$TTL 60
 @	IN	SOA	gideon.rosuav.com. domains.rosuav.com. (
 			0000000000	; Serial
 			7200		; Refresh
