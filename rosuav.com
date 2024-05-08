@@ -6,6 +6,12 @@ $TTL 60
 			2419200		; Expire
 			604800 )	; Negative Cache TTL
 
+; NOTE: Glue records for these two names are configured at Domains Priced Right,
+; aka SecureServer. Go to https://www.secureserver.net/?prog_id=domainspricedright&pl_id=1592&plid=1592
+; and sign in, then select Domains, DNS, and Hostnames (even though it's saying that
+; they aren't managing DNS and thus can't change things - they still manage glue).
+; Of course, their UI will probably have changed before the next time that I (or
+; anyone following behind me) needs this again.
 	IN	NS	gideon
 	IN	NS	o
 
@@ -16,40 +22,30 @@ $TTL 60
 @	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 www	IN	CNAME	@
 lists	IN	CNAME	@
-o	IN	A	203.206.226.83
-local	IN	A	192.168.0.13
-uk	IN	A	127.0.0.1
-*.uk	IN	A	127.0.0.1
+o	IN	A	159.196.70.86
+o	IN	AAAA	2403:5803:bf48::1
 garden	IN	A	127.0.0.1
 *.garden IN	A	127.0.0.1
 gideon.garden IN A	192.168.0.13
 yosemite.garden IN A	192.168.0.14
 huix.garden IN	A	192.168.0.16
 sikorsky.garden IN A	192.168.2.2
-text	IN	TXT	"Text 1A" "Text 1B"
-text	IN	TXT	"Text 2A" "Text 2B"
 gideon	IN	A	37.61.205.138
 gideon	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 ipv4	IN	A	37.61.205.138
 ipv6	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
-sikorsky IN	A	203.206.226.83
-stillebot IN	A	203.206.226.83
+sikorsky IN	A	159.196.70.86
+sikorsky IN	AAAA	2403:5803:bf48::1
+stillebot IN	A	159.196.70.86
 stillebot IN	A	37.61.205.138
-F-35LightningII IN	A	203.206.226.83
-kytheon	IN	A	37.61.205.138
-kytheon	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
-crawle	IN	A	203.214.67.43
+F-35LightningII IN	A	159.196.70.86
 vol	IN	CNAME	rosuav.github.io.
-dyna 60	IN	TXT	"Hello, world"
-dyn 30	IN	CNAME	dyna
-ttop	IN	A	203.206.205.179
+;ttop	IN	A	203.206.205.179
 
 ; deprecated vv
 dnd	IN	CNAME	@
-ns1	IN	A	203.206.226.83
+ns1	IN	A	159.196.70.86
 ns2	IN	A	37.61.205.138
-; nothing now uses i.rosuav.com, and it's kept for a transitional period only
-i	IN	A	37.61.205.138
 ; deprecated ^^
 
 @	IN	SPF	"v=spf1 -all"
