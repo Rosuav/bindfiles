@@ -1,0 +1,14 @@
+$TTL 3600
+; NOTE: Aussie Broadband delegates to just one server, not two, so this
+; is only handled by Sikorsky. The bindfiles are still shipped to Gideon,
+; but he won't be receiving the traffic.
+@	IN	SOA	o.rosuav.com. domains.rosuav.com. (
+			0000000000	; Serial
+			7200		; Refresh
+			3600		; Retry
+			2419200		; Expire
+			604800 )	; Negative Cache TTL
+
+	IN	NS	o.rosuav.com.
+
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0		PTR	sikorsky.rosuav.com.
