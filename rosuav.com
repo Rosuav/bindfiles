@@ -40,7 +40,7 @@ stillebot IN	A	159.196.70.86
 stillebot IN	A	37.61.205.138
 F-35LightningII IN	A	159.196.70.86
 ; Might not be completely consistent. Have to check.
-traal	IN	AAAA	2403:5803:bf48:8000::8ef7
+traal6	IN	AAAA	2403:5803:bf48:8000::8ef7
 vol	IN	CNAME	rosuav.github.io.
 ;ttop	IN	A	203.206.205.179
 
