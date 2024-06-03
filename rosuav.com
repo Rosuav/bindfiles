@@ -43,6 +43,7 @@ F-35LightningII IN	A	159.196.70.86
 traal6	IN	AAAA	2403:5803:bf48:8000::8ef7
 vol	IN	CNAME	rosuav.github.io.
 ;ttop	IN	A	203.206.205.179
+subdelegate IN	NS	2403:5803:bf48:8000::8ef7
 
 ; deprecated vv
 dnd	IN	CNAME	@
