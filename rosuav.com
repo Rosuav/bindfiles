@@ -12,48 +12,48 @@ $TTL 60
 ; they aren't managing DNS and thus can't change things - they still manage glue).
 ; Of course, their UI will probably have changed before the next time that I (or
 ; anyone following behind me) needs this again.
-	IN	NS	gideon
-	IN	NS	o
+		IN	NS	gideon
+		IN	NS	o
 
 
-	IN	MX	10 gideon
+		IN	MX	10 gideon
 
-@	IN	A	37.61.205.138
-@	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
-www	IN	CNAME	@
-lists	IN	CNAME	@
-o	IN	A	159.196.70.86
-o	IN	AAAA	2403:5803:bf48::1
-garden	IN	A	127.0.0.1
-*.garden IN	A	127.0.0.1
-gideon.garden IN A	192.168.0.13
-yosemite.garden IN A	192.168.0.14
-huix.garden IN	A	192.168.0.16
-sikorsky.garden IN A	192.168.2.2
-gideon	IN	A	37.61.205.138
-gideon	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
-ipv4	IN	A	37.61.205.138
-ipv6	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
-sikorsky IN	A	159.196.70.86
-sikorsky IN	AAAA	2403:5803:bf48::1
-stillebot IN	A	159.196.70.86
-stillebot IN	A	37.61.205.138
-F-35LightningII IN	A	159.196.70.86
+@		IN	A	37.61.205.138
+@		IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
+www		IN	CNAME	@
+lists		IN	CNAME	@
+o		IN	A	159.196.70.86
+o		IN	AAAA	2403:5803:bf48::1
+garden		IN	A	127.0.0.1
+*.garden	IN	A	127.0.0.1
+gideon.garden	IN	A	192.168.0.13
+yosemite.garden	IN	A	192.168.0.14
+huix.garden	IN	A	192.168.0.16
+sikorsky.garden	IN	A	192.168.2.2
+gideon		IN	A	37.61.205.138
+gideon		IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
+ipv4		IN	A	37.61.205.138
+ipv6		IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
+sikorsky	IN	A	159.196.70.86
+sikorsky	IN	AAAA	2403:5803:bf48::1
+stillebot	IN	A	159.196.70.86
+stillebot	IN	A	37.61.205.138
+F-35LightningII	IN	A	159.196.70.86
 ; Might not be completely consistent. Have to check.
-traal6	IN	AAAA	2403:5803:bf48:8000::8ef7
-vol	IN	CNAME	rosuav.github.io.
-;ttop	IN	A	203.206.205.179
-subdelegate IN	NS	traal6
+traal6		IN	AAAA	2403:5803:bf48:8000::8ef7
+vol		IN	CNAME	rosuav.github.io.
+;ttop		IN	A	203.206.205.179
+subdelegate	IN	NS	traal6
 
 ; deprecated vv
-dnd	IN	CNAME	@
-ns1	IN	A	159.196.70.86
-ns2	IN	A	37.61.205.138
+dnd		IN	CNAME	@
+ns1		IN	A	159.196.70.86
+ns2		IN	A	37.61.205.138
 ; deprecated ^^
 
-@	IN	SPF	"v=spf1 -all"
-@	IN	TXT	"v=spf1 -all"
-@	IN	TXT	"keybase-site-verification=KYKAVWX4a_qGHpZX-k8lPq4xpQQ27astPsP3F8IMJI0"
+@		IN	SPF	"v=spf1 -all"
+@		IN	TXT	"v=spf1 -all"
+@		IN	TXT	"keybase-site-verification=KYKAVWX4a_qGHpZX-k8lPq4xpQQ27astPsP3F8IMJI0"
 
 ; $include "/etc/bind/Krosuav.com.+005+28701.key"
 ; $include "/etc/bind/Krosuav.com.+005+49534.key"
