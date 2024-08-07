@@ -10,3 +10,19 @@ lists all zone files. Add an include directive to /etc/bind/named.conf.local
 telling bind to read 'zones'; everything else should be handled automatically.
 
 After any change, pull the latest changes, then reload bind9. Done!
+
+For dynamic updates from DHCP, create a file /var/lib/bind/garden.rosuav.com:
+
+$TTL 7200
+@	IN	SOA	gideon.rosuav.com. domains.rosuav.com. (
+			0000000000	; Serial
+			7200		; Refresh
+			3600		; Retry
+			2419200		; Expire
+			604800 )	; Negative Cache TTL
+
+	IN	NS	gideon.rosuav.com.
+	IN	NS	o.rosuav.com.
+
+(serial doesn't matter, it'll be overwritten). The rest of the setup is in
+named.conf.local and /etc/dhcp.
