@@ -25,4 +25,4 @@ $TTL 7200
 	IN	NS	o.rosuav.com.
 
 (serial doesn't matter, it'll be overwritten). The rest of the setup is in
-named.conf.local and /etc/dhcp.
+named.conf.local and /etc/dhcp. Similarly, create files for reverse DNS.
