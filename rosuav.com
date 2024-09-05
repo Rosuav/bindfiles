@@ -37,6 +37,7 @@ sikorsky	IN	AAAA	2403:5803:bf48::1
 stillebot	IN	A	159.196.70.86
 stillebot	IN	A	37.61.205.138
 F-35LightningII	IN	A	159.196.70.86
+F-35LightningII	IN	AAAA	2403:5803:bf48:8000::89f7
 ; Might not be completely consistent. Have to check.
 traal6		IN	AAAA	2403:5803:bf48:8000::8ef7
 vol		IN	CNAME	rosuav.github.io.
