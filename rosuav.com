@@ -24,9 +24,7 @@ www		IN	CNAME	@
 lists		IN	CNAME	@
 o		IN	A	159.196.70.86
 o		IN	AAAA	2403:5803:bf48::1
-garden		IN	A	127.0.0.1
-*.garden	IN	A	127.0.0.1
-gideon.garden	IN	A	192.168.0.13
+garden		IN	NS	o
 yosemite.garden	IN	A	192.168.0.14
 huix.garden	IN	A	192.168.0.16
 sikorsky.garden	IN	A	192.168.2.2
