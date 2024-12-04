@@ -26,3 +26,7 @@ $TTL 7200
 
 (serial doesn't matter, it'll be overwritten). The rest of the setup is in
 named.conf.local and /etc/dhcp. Similarly, create files for reverse DNS.
+
+It seems that bind will add $ORIGIN directives to this file, so don't assume
+too much without looking. Adding manual entries (eg for sikorsky) should be
+valid and will be important, since this is the search domain for downstream.
