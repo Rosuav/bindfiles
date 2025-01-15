@@ -25,3 +25,4 @@ gideon6	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 www	IN	CNAME	@
 @	IN	SPF	"v=spf1 -all"
 @	IN	TXT	"v=spf1 -all"
+@	IN	TXT	"google-site-verification=ug9RUQm0uq0seI9Me6fm7GbmGwkxKEwJfaB1R3CSNes"
