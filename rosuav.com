@@ -43,6 +43,9 @@ vol		IN	CNAME	rosuav.github.io.
 ;ttop		IN	A	203.206.205.179
 subdelegate	IN	NS	traal6
 _atproto	IN	TXT	"did=did:plc:5oizpggfxh24vjxfjqohsqj3"
+; Subdelegation of PTR records within its own sphere of influence
+; Implemented via magical routing.
+tomfoolery	IN	AAAA	2403:5803:bf48:1::
 
 ; deprecated vv
 dnd		IN	CNAME	@

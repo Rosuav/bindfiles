@@ -12,3 +12,4 @@ $TTL 3600
 	IN	NS	o.rosuav.com.
 
 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0		PTR	sikorsky.rosuav.com.
+1.0.0.0		NS	tomfoolery.rosuav.com.
