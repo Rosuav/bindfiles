@@ -46,6 +46,8 @@ _atproto	IN	TXT	"did=did:plc:5oizpggfxh24vjxfjqohsqj3"
 ; Subdelegation of PTR records within its own sphere of influence
 ; Implemented via magical routing.
 tomfoolery	IN	AAAA	2403:5803:bf48:1::
+jabberwocky	IN	AAAA	2403:5803:bf48:1::1
+aboatbeneath	IN	AAAA	2403:5803:bf48:1::2
 
 ; deprecated vv
 dnd		IN	CNAME	@
