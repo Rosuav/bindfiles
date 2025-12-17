@@ -14,13 +14,13 @@ $TTL 60
 
 @	IN	A	159.196.70.86
 @	IN	A	37.61.205.138
-@	IN	AAAA	2403:5803:bf48::1
+@	IN	AAAA	2403:5803:f90e::1
 @	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 sikorsky IN	A	159.196.70.86
 gideon	IN	A	37.61.205.138
 sikorsky4 IN	A	159.196.70.86
 gideon4	IN	A	37.61.205.138
-sikorsky6 IN	AAAA	2403:5803:bf48::1
+sikorsky6 IN	AAAA	2403:5803:f90e::1
 gideon6	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 www	IN	CNAME	@
 @	IN	SPF	"v=spf1 -all"

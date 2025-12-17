@@ -23,7 +23,7 @@ $TTL 60
 www		IN	CNAME	@
 lists		IN	CNAME	@
 o		IN	A	159.196.70.86
-o		IN	AAAA	2403:5803:bf48::1
+o		IN	AAAA	2403:5803:f90e::1
 garden		IN	NS	o
 yosemite.garden	IN	A	192.168.0.14
 huix.garden	IN	A	192.168.0.16
@@ -33,21 +33,21 @@ gideon		IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 ipv4		IN	A	37.61.205.138
 ipv6		IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
 sikorsky	IN	A	159.196.70.86
-sikorsky	IN	AAAA	2403:5803:bf48::1
+sikorsky	IN	AAAA	2403:5803:f90e::1
 stillebot	IN	A	159.196.70.86
 stillebot	IN	A	37.61.205.138
-F-35LightningII	IN	AAAA	2403:5803:bf48:8000::89f7
+F-35LightningII	IN	AAAA	2403:5803:f90e:8000::89f7
 ; Might not be completely consistent. Have to check.
-traal6		IN	AAAA	2403:5803:bf48:8000::8ef7
+traal6		IN	AAAA	2403:5803:f90e:8000::8ef7
 vol		IN	CNAME	rosuav.github.io.
 ;ttop		IN	A	203.206.205.179
 subdelegate	IN	NS	traal6
 _atproto	IN	TXT	"did=did:plc:5oizpggfxh24vjxfjqohsqj3"
 ; Subdelegation of PTR records within its own sphere of influence
 ; Implemented via magical routing.
-tomfoolery	IN	AAAA	2403:5803:bf48:1::
-jabberwocky	IN	AAAA	2403:5803:bf48:1::1
-aboatbeneath	IN	AAAA	2403:5803:bf48:1::2
+tomfoolery	IN	AAAA	2403:5803:f90e:1::
+jabberwocky	IN	AAAA	2403:5803:f90e:1::1
+aboatbeneath	IN	AAAA	2403:5803:f90e:1::2
 
 ; deprecated vv
 dnd		IN	CNAME	@
