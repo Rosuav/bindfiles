@@ -55,8 +55,8 @@ ns1		IN	A	159.196.70.86
 ns2		IN	A	37.61.205.138
 ; deprecated ^^
 
-@		IN	SPF	"v=spf1 -all"
-@		IN	TXT	"v=spf1 -all"
+@		IN	SPF	"v=spf1 ip4:159.196.70.86 ip4:37.61.205.138 ip4:192.168.0.0/16 ip6:2a01:488:67:1000:253d:cd8a:0:1 ip6:2403:5803:f90e::1 -all"
+@		IN	TXT	"v=spf1 ip4:159.196.70.86 ip4:37.61.205.138 ip4:192.168.0.0/16 ip6:2a01:488:67:1000:253d:cd8a:0:1 ip6:2403:5803:f90e::1 -all"
 @		IN	TXT	"keybase-site-verification=KYKAVWX4a_qGHpZX-k8lPq4xpQQ27astPsP3F8IMJI0"
 
 ; $include "/etc/bind/Krosuav.com.+005+28701.key"
