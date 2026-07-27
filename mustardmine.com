@@ -22,6 +22,7 @@ sikorsky4 IN	A	159.196.70.86
 gideon4	IN	A	37.61.205.138
 sikorsky6 IN	AAAA	2403:5803:f90e::1
 gideon6	IN	AAAA	2a01:488:67:1000:253d:cd8a:0:1
+demosite IN	CNAME	mustardmine.github.io.
 www	IN	CNAME	@
 @	IN	SPF	"v=spf1 -all"
 @	IN	TXT	"v=spf1 -all"
