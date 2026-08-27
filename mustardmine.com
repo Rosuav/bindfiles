@@ -27,3 +27,4 @@ www	IN	CNAME	@
 @	IN	SPF	"v=spf1 -all"
 @	IN	TXT	"v=spf1 -all"
 @	IN	TXT	"google-site-verification=ug9RUQm0uq0seI9Me6fm7GbmGwkxKEwJfaB1R3CSNes"
+@	IN	TXT	"ahrefs-site-verification_c01fe42fd73be4c5aeebef252a38b3853b900a78cec66234ffd04d4f90aa5475"
