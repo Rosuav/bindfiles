@@ -48,6 +48,9 @@ _atproto	IN	TXT	"did=did:plc:5oizpggfxh24vjxfjqohsqj3"
 tomfoolery	IN	AAAA	2403:5803:f90e:1::
 jabberwocky	IN	AAAA	2403:5803:f90e:1::1
 aboatbeneath	IN	AAAA	2403:5803:f90e:1::2
+ykcowrebbaj	IN	AAAA	2403:5803:f90e:1::3
+walrus		IN	AAAA	2403:5803:f90e:1::4
+walruscarpenter	IN	AAAA	2403:5803:f90e:1::4
 twitchpi	IN	CNAME	mustardmine.github.io.
 
 ; deprecated vv
