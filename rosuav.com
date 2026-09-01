@@ -51,6 +51,8 @@ aboatbeneath	IN	AAAA	2403:5803:f90e:1::2
 ykcowrebbaj	IN	AAAA	2403:5803:f90e:1::3
 walrus		IN	AAAA	2403:5803:f90e:1::4
 walruscarpenter	IN	AAAA	2403:5803:f90e:1::4
+crocodile	IN	AAAA	2403:5803:f90e:1::5
+howdoththelittle IN	AAAA	2403:5803:f90e:1::5
 twitchpi	IN	CNAME	mustardmine.github.io.
 
 ; deprecated vv
