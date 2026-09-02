@@ -53,6 +53,7 @@ walrus		IN	AAAA	2403:5803:f90e:1::4
 walruscarpenter	IN	AAAA	2403:5803:f90e:1::4
 crocodile	IN	AAAA	2403:5803:f90e:1::5
 howdoththelittle IN	AAAA	2403:5803:f90e:1::5
+owlpanther	IN	AAAA	2403:5803:f90e:1::6
 twitchpi	IN	CNAME	mustardmine.github.io.
 
 ; deprecated vv
